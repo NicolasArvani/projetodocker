@@ -6,7 +6,7 @@ services:
     build:
       context: .
       # Atencao: Incluir referencia para o nome do dockerfile de especificacao da imagem do backend 
-      dockerfile: Dockerfile-mysql
+      dockerfile: 
     restart: always
 
   phonebook-app:

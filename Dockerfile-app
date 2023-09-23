@@ -1,5 +1,5 @@
 # Atencao: Criar imagem usando como imagem base python:3.8-alpime
-FROM python:
+FROM
 
 # Nao e' necessario atualizar nada aqui
 WORKDIR /app
