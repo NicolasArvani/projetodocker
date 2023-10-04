@@ -6,7 +6,7 @@ services:
     build:
       context: .
       # Atencao: Incluir referencia para o nome do dockerfile de especificacao da imagem do backend 
-      dockerfile: 
+      dockerfile: Dockerfile-mysql
     restart: always
 
   phonebook-app:
@@ -14,10 +14,10 @@ services:
     build:
       context: .
       # Atencao: Incluir referencia para o nome do dockerfile de especificacao da imagem do frontend
-      dockerfile: 
+      dockerfile: Dockerfile-app
     depends_on:
       - phonebook-mysql
     ports:
       # Atencao: especificar o mapeamento da porta TCP que o frontend deve atender 8181:8181
-      - 
+      - "8181:8181"
     restart: always
